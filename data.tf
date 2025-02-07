@@ -1,6 +1,6 @@
 ### DATA IMPORT
 data "aws_ami" "amazon-linux" {
-  most_recent = true
+  # most_recent = true
 
   filter {
     name   = "owner-alias"
@@ -9,8 +9,7 @@ data "aws_ami" "amazon-linux" {
 
   filter {
     name = "name"
-    # values = ["al2023-ami-2023.6.20241031.0-kernel-6.1-arm64"]
-    values = ["al2023-ami-*-arm64"]
+    values = ["al2023-ami-2023.6.20241031.0-kernel-6.1-x86_64"] 
   }
 }
 

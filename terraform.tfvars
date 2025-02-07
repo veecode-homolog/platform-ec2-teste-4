@@ -8,7 +8,7 @@ resource_tags = {
 }
 
 # ec2 variables
-instance_type = "t4g.medium"
+instance_type = "t3.medium"
 keypair_name  = "platform_kp"
 # volume_type   = "gp3"
 # volume_size   = 30
