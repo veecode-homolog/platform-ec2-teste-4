@@ -72,6 +72,10 @@
         helm repo add kong https://charts.konghq.com
         helm repo add veecode-platform https://veecode-platform.github.io/public-charts/
         helm repo update
+        
+    - name: Create namespace platform
+      shell: |
+        kubectl create namespace platform     
 
     - name: Install postgresql
       shell: |
