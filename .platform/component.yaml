@@ -1,0 +1,11 @@
+apiVersion: veecode.backstage.io/v1alpha1
+kind: Cluster
+metadata:
+  name: "platform-ec2-teste-4"
+  annotations:
+    github.com/project-slug: veecode-homolog/platform-ec2-teste-4
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: ec2
+  lifecycle: experimental
+  owner: "group:default/admin"
